@@ -30,7 +30,7 @@ public class playerMovement : MonoBehaviour
         jumpAction.Enable();
     }
 
-    // // Update is called once per frame (hardware dependent)
+    //Update is called once per frame
     void Update()
     {
         MovePlayer();
@@ -47,7 +47,7 @@ public class playerMovement : MonoBehaviour
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
 
-        // Apply gravity only when not grounded
+        //apply gravity only when not grounded
         if (!isGrounded)
         {
             velocity.y += gravity * Time.deltaTime;
